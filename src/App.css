@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+
+.Card {
+  background-color: white;
+  color: black;
+  padding: 20px;
+}
+
+.Category, .Spade {
+  margin-right: 5px;
+  padding: 1px 7px;
+  border: medium black solid;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.Spade {
+  margin-left: 180px;
+  float: right;
+}
+
+.person {
+  background: yellow;
+}
+
+.world {
+  background: mediumblue;
+}
+
+.object {
+  background: dodgerblue;
+}
+
+.adjective {
+  background: darkorange;
+}
+
+.nature {
+  background: green;
+}
+
+.random {
+  background: red;
+}
+
+.Entry {
+  text-align: left;
+  margin-bottom: 12px;
+  display: block;
+  font-family: fantasy;
+}
