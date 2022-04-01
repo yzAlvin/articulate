@@ -1,16 +1,16 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import {Card} from "./Card";
+import {Card, CardProps} from "./Card";
 
 function App() {
-  const entries = {
-    person: 'Sean Connery',
-    world: 'Harvard',
-    object: 'Christmas Cracker',
-    adjective: 'Consulting',
-    nature: 'Mosquito',
-    random: 'Alien'
+  const entries: CardProps = {
+    person: {value: 'Sean Connery', spade: true},
+    world: {value: 'Harvard'},
+    object: {value: 'Christmas Cracker'},
+    adjective: {value: 'Consulting'},
+    nature: {value: 'Mosquito'},
+    random: {value: 'Alien'}
   };
   return (
     <div className="App">
