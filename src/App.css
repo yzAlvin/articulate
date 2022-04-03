@@ -17,6 +17,7 @@
   background-color: white;
   color: black;
   padding: 20px;
+  width: 400px;
 }
 
 .Category, .Spade {
@@ -28,7 +29,6 @@
 }
 
 .Spade {
-  margin-left: 180px;
   float: right;
 }
 
