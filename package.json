@@ -22,7 +22,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint './**/*.{ts,tsx}' --max-warnings 0",
-    "deploy": "npm run build && gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
