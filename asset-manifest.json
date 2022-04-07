@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/articulate/static/css/main.5f0d1c96.css",
+    "main.js": "/articulate/static/js/main.18fdf3da.js",
+    "index.html": "/articulate/index.html",
+    "main.5f0d1c96.css.map": "/articulate/static/css/main.5f0d1c96.css.map",
+    "main.18fdf3da.js.map": "/articulate/static/js/main.18fdf3da.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5f0d1c96.css",
+    "static/js/main.18fdf3da.js"
+  ]
+}
