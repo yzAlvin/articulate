@@ -1,14 +1,26 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import {Card} from "./Card";
-import {cards} from "./Cards";
+import {cards as data} from "./Cards";
 
-function App() {
+const App = () => {
+  const [cards] = useState(data)
+  const [index, setIndex] = useState(0)
+
+    const prevPerson = () => {
+        setIndex((index) => (index - 1) < 0 ? cards.length - 1 : index - 1)
+    }
+
+    const nextPerson = () => {
+        setIndex((index) => (index + 1) % (cards.length))
+    }
+
   return (
     <div className="App">
-      <header className="App-header">
-        {cards.map(card => <Card {...card}/>)}
-      </header>
+        <button className="Next" onClick={nextPerson}>
+            <Card {...cards[index]}/>
+        </button>
+        <button className="Prev" onClick={prevPerson}>{'<'}</button>
     </div>
   );
 }
