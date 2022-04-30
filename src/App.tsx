@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './App.css';
+import './scss/base.scss';
 import {Card} from "./Card";
 import {cards as data} from "./Cards";
 

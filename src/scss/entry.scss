@@ -1,0 +1,23 @@
+.Category, .Spade {
+  border: medium black solid;
+  font-family: monospace;
+  font-weight: bold;
+  padding: 0px 10px;
+}
+
+.Category {
+    margin-right: 0.2em;
+}
+
+.Spade {
+  float: right;
+}
+
+.Entry {
+  text-align: left;
+  display: block;
+}
+
+.Entry:not(:last-child) {
+  margin-bottom: 0.4em;
+}

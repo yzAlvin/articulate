@@ -1,3 +1,5 @@
+import './scss/entry.scss'
+
 export type EntryProps = {
     category: string
     value: string
