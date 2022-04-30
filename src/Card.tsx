@@ -1,12 +1,18 @@
 import {Entry} from "./Entry";
+import './scss/card.scss'
+
+type CardValue = {
+    value: string;
+    spade?: boolean;
+}
 
 export type CardProps = {
-    person: {value: string; spade?: boolean}
-    world: {value: string; spade?: boolean}
-    object: {value: string; spade?: boolean}
-    adjective: {value: string; spade?: boolean}
-    nature: {value: string; spade?: boolean}
-    random: {value: string; spade?: boolean}
+    person: CardValue
+    world: CardValue
+    object: CardValue
+    adjective: CardValue
+    nature: CardValue
+    random: CardValue
 };
 
 export const Card = (props: CardProps) =>

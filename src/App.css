@@ -28,30 +28,6 @@
   float: right;
 }
 
-.person {
-  background: yellow;
-}
-
-.world {
-  background: mediumblue;
-}
-
-.object {
-  background: dodgerblue;
-}
-
-.adjective {
-  background: darkorange;
-}
-
-.nature {
-  background: green;
-}
-
-.random {
-  background: red;
-}
-
 .Entry {
   text-align: left;
   margin-bottom: 12px;
