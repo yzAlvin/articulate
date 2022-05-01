@@ -1,4 +1,34 @@
-export const cards = [
+import { CardProps } from "./Card";
+const people: string[] = ["Alvin Zhao", "andy", "brian", "david"];
+const worlds = ["Australia", "china", "ukraine", "new zealand"];
+const objects = [
+  "Bubble Wrap",
+  "rubbish bin",
+  "scratch post",
+  "computer monitor",
+];
+const adjectives = ["Struggling", "digesting", "fishing", "flushing"];
+const natures = ["Watermelon", "grape", "apple", "banana"];
+const randoms = ["Beeline", "anime", "shadow", "sword"];
+
+export const createCard = (
+  people: string[],
+  worlds: string[],
+  objects: string[],
+  adjectives: string[],
+  natures: string[],
+  randoms: string[]
+): CardProps => {
+  return {
+    person: { value: people[0], spade: true },
+    world: { value: worlds[0] },
+    object: { value: objects[0] },
+    adjective: { value: adjectives[0] },
+    nature: { value: natures[0] },
+    random: { value: randoms[0] },
+  };
+};
+export const cards: CardProps[] = [
   {
     person: { value: "Sean Connery", spade: true },
     world: { value: "Harvard" },
@@ -135,4 +165,5 @@ export const cards = [
     nature: { value: "Aubergine" },
     random: { value: "Beeline" },
   },
+  createCard(people, worlds, objects, adjectives, natures, randoms),
 ];
