@@ -8,3 +8,16 @@ $twitch-color: #ab48fc;
 $anime-color: #ee3e43;
 $game-color: #64fa29;
 $fastfood-color: #f79f2c;
+
+:root {
+    --person-color: #{$person-color};
+    --world-color: #{$world-color};
+    --adjective-color: #{$adjective-color};
+    --object-color: #{$object-color};
+    --nature-color: #{$nature-color};
+    --random-color: #{$random-color};
+    --twitch-color: #{$twitch-color};
+    --anime-color: #{$anime-color};
+    --game-color: #{$game-color};
+    --fastFood-color: #{$fastfood-color};
+}

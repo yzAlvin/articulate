@@ -1,47 +1,6 @@
-@import '../_colours';
-
 .Card {
     background-color: white;
     padding: 1em;
     min-width: 300px;
     width: 60vw;
-    .person {
-        background: $person-color;
-    }
-    
-    .world {
-        background: $world-color;
-    }
-    
-    .object {
-        background: $object-color;
-    }
-    
-    .adjective {
-        background: $adjective-color;
-    }
-    
-    .nature {
-        background: $nature-color;
-    }
-    
-    .random {
-        background: $random-color;
-    }
-
-    .twitch {
-        background: $twitch-color;
-    }
-
-    .anime {
-        background: $anime-color;
-    }
-
-    .game {
-        background: $game-color;
-    }
-
-    .fastFood {
-        background: $fastfood-color;
-    }
 }

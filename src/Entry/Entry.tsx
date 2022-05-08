@@ -1,4 +1,5 @@
 import './entry.scss'
+import '../_colours.scss'
 
 export type EntryProps = {
     category: String
@@ -8,9 +9,9 @@ export type EntryProps = {
 
 export function Entry(props: EntryProps) {
     return <div className="Entry">
-        <span className={`Category ${props.category}`}>{getCategoryLetter(props.category)}</span>
+        <span className={`Category ${props.category}`} style={{background: `var(--${props.category}-color)`}}>{getCategoryLetter(props.category)}</span>
         <span className="Value">{props.value}</span>
-        <span className={`Spade ${props.category}`}>{isSpade(props.spade)}</span>
+        <span className={`Spade ${props.category}`} style={{background: `var(--${props.category}-color)`}}>{isSpade(props.spade)}</span>
     </div>
 }
 
