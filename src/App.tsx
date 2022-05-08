@@ -3,6 +3,7 @@ import './base.scss';
 import {Card, CardProps} from "./Card/Card";
 import {createCard} from "./Cards/Cards";
 import { defaultSet, defaultSetType } from './Cards/Sets';
+import { Footer } from './Footer/Footer';
 
 const App = () => {
   const [index, setIndex] = useState(Math.floor(Math.random()*100))
@@ -23,6 +24,7 @@ const App = () => {
             <Card {...createCard<defaultSetType, CardProps>(defaultSet, index)}/>
         </button>
     </div>
+    <Footer/>
   </>
   );
 }
