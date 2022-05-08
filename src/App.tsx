@@ -16,12 +16,14 @@ const App = () => {
     }
 
   return (
+    <>
+    <img className="title" src={`${process.env.PUBLIC_URL}/assets/Articulate.png`}/>
     <div className="App">
         <button className="Next" onClick={nextPerson}>
             <Card {...createCard<defaultSetType, CardProps>(defaultSet, index)}/>
         </button>
-        <button className="Prev" onClick={prevPerson}>{'<'}</button>
     </div>
+  </>
   );
 }
 
