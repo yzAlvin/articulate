@@ -1,24 +1,24 @@
 import React, {useState} from 'react';
 import './base.scss';
-import {Card} from "./Card/Card";
-import {cards as data} from "./Cards/Cards";
+import {Card, CardProps} from "./Card/Card";
+import {createCard} from "./Cards/Cards";
+import { defaultSet, defaultSetType } from './Cards/Sets';
 
 const App = () => {
-  const [cards] = useState(data)
-  const [index, setIndex] = useState(0)
+  const [index, setIndex] = useState(Math.floor(Math.random()*100))
 
     const prevPerson = () => {
-        setIndex((index) => (index - 1) < 0 ? cards.length - 1 : index - 1)
+        setIndex(index - 1)
     }
 
     const nextPerson = () => {
-        setIndex((index) => (index + 1) % (cards.length))
+        setIndex(index + 1)
     }
 
   return (
     <div className="App">
         <button className="Next" onClick={nextPerson}>
-            <Card {...cards[index]}/>
+            <Card {...createCard<defaultSetType, CardProps>(defaultSet, index)}/>
         </button>
         <button className="Prev" onClick={prevPerson}>{'<'}</button>
     </div>
