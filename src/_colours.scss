@@ -8,6 +8,7 @@ $twitch-color: #ab48fc;
 $anime-color: #ee3e43;
 $game-color: #64fa29;
 $fastfood-color: #f79f2c;
+$brand-color: grey;
 
 :root {
     --person-color: #{$person-color};
@@ -20,4 +21,5 @@ $fastfood-color: #f79f2c;
     --anime-color: #{$anime-color};
     --game-color: #{$game-color};
     --fastFood-color: #{$fastfood-color};
+    --brand-color: #{$brand-color};
 }

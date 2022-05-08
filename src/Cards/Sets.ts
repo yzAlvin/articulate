@@ -8,6 +8,7 @@ import { twitchStreamers } from "./TwitchStreamers";
 import { anime } from "./Anime";
 import { fastFoods } from "./FastFoodRestaurants";
 import { games } from "./Games";
+import { brands } from "./Brands";
 
 export type defaultSetType = {
     nature: String[],
@@ -30,10 +31,12 @@ export type wipSetType = {
     anime: String[],
     game: String[],
     fastFood: string[],
+    brand: string[],
 }
 export const wipSet: wipSetType = {
     twitch: twitchStreamers,
     anime: anime,
     game: games,
     fastFood: fastFoods,
+    brand: brands,
 }

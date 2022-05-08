@@ -47,12 +47,14 @@ describe("createCard", () => {
       anime: ["naruto"],
       game: ["cs"],
       fastFood: ["red rooster"],
+      brand: ["toyota"]
     }
     const expected = {
       twitch: { value: wipSet.twitch[0], spade: true },
       anime: { value:wipSet.anime[0]},
       game: { value: wipSet.game[0]},
       fastFood: { value: wipSet.fastFood[0]},
+      brand: { value: wipSet.brand[0]},
     }
     const actual = createCard(
       wipSet,
