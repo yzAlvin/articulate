@@ -8,17 +8,13 @@ import { Footer } from './Footer/Footer';
 const App = () => {
   const [index, setIndex] = useState(Math.floor(Math.random()*100))
 
-    const prevPerson = () => {
-        setIndex(index - 1)
-    }
-
     const nextPerson = () => {
         setIndex(index + 1)
     }
 
   return (
     <>
-    <img className="title" src={`${process.env.PUBLIC_URL}/assets/Articulate.png`}/>
+    <img className="title" src={`${process.env.PUBLIC_URL}/assets/Articulate.png`} alt="articulate logo"/>
     <div className="App">
         <button className="Next" onClick={nextPerson}>
             <Card {...createCard<defaultSetType, CardProps>(defaultSet, index)}/>
