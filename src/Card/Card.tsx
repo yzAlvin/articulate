@@ -2,7 +2,7 @@ import {Entry} from "../Entry/Entry";
 import './card.scss'
 
 type CardValue = {
-    value: string;
+    value: String;
     spade?: boolean;
 }
 
@@ -19,8 +19,8 @@ export const Card = (props: CardProps) =>
     <div className="Card">
         {
             Object.entries(props)
-                .map((entry) =>
-                    <Entry category={entry[0]} value={entry[1].value} spade={entry[1].spade}/>
+                .map((entry, i) =>
+                    <Entry key={i} category={entry[0]} value={entry[1].value} spade={entry[1].spade}/>
                 )
         }
     </div>;

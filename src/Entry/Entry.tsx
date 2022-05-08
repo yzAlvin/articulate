@@ -1,8 +1,8 @@
 import './entry.scss'
 
 export type EntryProps = {
-    category: string
-    value: string
+    category: String
+    value: String
     spade?: boolean
 }
 
@@ -14,6 +14,6 @@ export function Entry(props: EntryProps) {
     </div>
 }
 
-const getCategoryLetter = (category: string): string => category.substring(0, 1).toUpperCase()
+const getCategoryLetter = (category: String): String => category.substring(0, 1).toUpperCase()
 
-const isSpade = (spade: boolean | undefined): string => spade ? `♠` : String.fromCharCode(160)
+const isSpade = (spade: boolean | undefined): String => spade ? `♠` : String.fromCharCode(160)
