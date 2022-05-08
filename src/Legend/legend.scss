@@ -45,6 +45,22 @@
     &.random {
       color: $random-color;
     }
+    
+    &.twitch {
+      color: $twitch-color;
+    }
+
+    &.anime {
+      color: $anime-color;
+    }
+
+    &.game {
+      color: $game-color;
+    }
+
+    &.fastFood {
+      color: $fastfood-color;
+    }
   }
 
 
@@ -67,6 +83,18 @@
     }
     &.random {
       background-color: $random-color;
+    }
+    &.twitch {
+      background: $twitch-color;
+    }
+    &.anime {
+      background: $anime-color;
+    }
+    &.game {
+      background: $game-color;
+    }
+    &.fastFood {
+      background: $fastfood-color;
     }
   }
 }

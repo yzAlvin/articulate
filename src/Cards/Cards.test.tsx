@@ -1,5 +1,5 @@
 import { createCard } from "./Cards";
-import { defaultSetType, personSetType } from "./Sets";
+import { defaultSetType, wipSetType } from "./Sets";
 
 beforeEach(() => {
     jest.spyOn(global.Math, 'random').mockReturnValue(0);
@@ -42,15 +42,20 @@ describe("createCard", () => {
   });
 
   it("should return dude", () => {
-    const people = ["some name"]
-    const personSet: personSetType = {
-      dude: people
+    const wipSet: wipSetType = {
+      twitch: ["xqc"],
+      anime: ["naruto"],
+      game: ["cs"],
+      fastFood: ["red rooster"],
     }
     const expected = {
-      dude: { value: "some name", spade: true },
+      twitch: { value: wipSet.twitch[0], spade: true },
+      anime: { value:wipSet.anime[0]},
+      game: { value: wipSet.game[0]},
+      fastFood: { value: wipSet.fastFood[0]},
     }
     const actual = createCard(
-      personSet,
+      wipSet,
       0
     );
     expect(actual).toEqual(expected)

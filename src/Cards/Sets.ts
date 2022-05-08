@@ -4,6 +4,10 @@ import { people } from "./People";
 import { adjectives } from "./Adjectives";
 import { randoms } from "./Randoms";
 import { worlds } from "./Worlds";
+import { twitchStreamers } from "./TwitchStreamers";
+import { anime } from "./Anime";
+import { fastFoods } from "./FastFoodRestaurants";
+import { games } from "./Games";
 
 export type defaultSetType = {
     nature: String[],
@@ -21,9 +25,15 @@ export const defaultSet: defaultSetType = {
     nature: natures,
     random: randoms, 
 }
-export type personSetType = {
-    dude: String[],
+export type wipSetType = {
+    twitch: String[],
+    anime: String[],
+    game: String[],
+    fastFood: string[],
 }
-export const personSet: personSetType = {
-    dude: people
+export const wipSet: wipSetType = {
+    twitch: twitchStreamers,
+    anime: anime,
+    game: games,
+    fastFood: fastFoods,
 }
