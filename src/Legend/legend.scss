@@ -1,0 +1,76 @@
+@import '../_colours';
+
+.Legend {
+  // background-color: rgb(180, 180, 180);
+  min-width: 300px;
+  width: 40vw;
+  font-family: monospace;
+  margin: 3vh auto;
+  font-size: calc(5px + 2vmin);
+  padding: 2em;
+
+  h2 {
+    margin: unset;
+    margin-bottom: 3vh;
+    text-align: center;
+    color: white;
+  }
+
+  .LegendKey {
+    text-shadow:
+    -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    &.person {
+      color: $person-color;
+    }
+    
+    &.world {
+        color: $world-color;
+    }
+    
+    &.object {
+      color: $object-color;
+    }
+    
+    &.adjective {
+      color: $adjective-color;
+    }
+    
+    &.nature {
+      color: $nature-color;
+    }
+    
+    &.random {
+      color: $random-color;
+    }
+  }
+
+
+  .Category {
+    color: black;
+    &.person {
+      background-color: $person-color;
+    } 
+    &.world {
+      background-color: $world-color;
+    }
+    &.object {
+      background-color: $object-color;
+    }
+    &.adjective {
+      background-color: $adjective-color;
+    }
+    &.nature {
+      background-color: $nature-color;
+    }
+    &.random {
+      background-color: $random-color;
+    }
+  }
+}
+
+.Legend .key:not(:last-child) {
+  margin-bottom: 0.4em;
+}
