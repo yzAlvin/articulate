@@ -1,4 +1,4 @@
-import { CardProps } from "./Card";
+import { CardProps } from "../Card/Card";
 const people: string[] = ["Alvin Zhao", "andy", "brian", "david"];
 const worlds = ["Australia", "china", "ukraine", "new zealand"];
 const objects = [

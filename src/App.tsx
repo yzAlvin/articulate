@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import './scss/base.scss';
-import {Card} from "./Card";
-import {cards as data} from "./Cards";
+import './base.scss';
+import {Card} from "./Card/Card";
+import {cards as data} from "./Cards/Cards";
 
 const App = () => {
   const [cards] = useState(data)

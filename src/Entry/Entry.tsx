@@ -1,4 +1,4 @@
-import './scss/entry.scss'
+import './entry.scss'
 
 export type EntryProps = {
     category: string

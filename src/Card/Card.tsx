@@ -1,5 +1,5 @@
-import {Entry} from "./Entry";
-import './scss/card.scss'
+import {Entry} from "../Entry/Entry";
+import './card.scss'
 
 type CardValue = {
     value: string;
