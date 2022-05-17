@@ -10,5 +10,6 @@ export const fastFoods: string[] = [
     "Pancake Parlour",
     "Sumo Salad",
     "Zambrero",
-    "McDonald's"
+    "McDonald's",
+    "Jollibee"
 ];
