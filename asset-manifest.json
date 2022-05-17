@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/articulate/static/css/main.c95fd144.css",
-    "main.js": "/articulate/static/js/main.b0f66cfa.js",
+    "main.js": "/articulate/static/js/main.f2828af9.js",
     "index.html": "/articulate/index.html",
     "main.c95fd144.css.map": "/articulate/static/css/main.c95fd144.css.map",
-    "main.b0f66cfa.js.map": "/articulate/static/js/main.b0f66cfa.js.map"
+    "main.f2828af9.js.map": "/articulate/static/js/main.f2828af9.js.map"
   },
   "entrypoints": [
     "static/css/main.c95fd144.css",
-    "static/js/main.b0f66cfa.js"
+    "static/js/main.f2828af9.js"
   ]
 }
