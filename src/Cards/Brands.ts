@@ -50,3 +50,8 @@ export const brands: string[] = [
     "Bank of America",
     "Chase",
 ];
+
+export const newBrands = {
+    category: "brand",
+    targets: brands
+}

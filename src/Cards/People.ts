@@ -15,5 +15,10 @@ export const people: string[] = [
     "Santa Claus",
     "Napoleon Bonaparte",
     "Ernest Hemingway",
-    "The Phanom",
+    "The Phantom",
 ];
+
+export const newPerson = {
+    category: "person",
+    targets: people
+}

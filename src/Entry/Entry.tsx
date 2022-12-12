@@ -3,15 +3,18 @@ import '../_colours.scss'
 
 export type EntryProps = {
     category: String
-    value: String
-    spade?: boolean
+    value: string[]
+    idx: number
+    isSpadee: boolean
 }
 
 export function Entry(props: EntryProps) {
+    const {category, value, idx, isSpadee} = props
+
     return <div className="Entry">
-        <span className={`Category ${props.category}`} style={{background: `var(--${props.category}-color)`}}>{getCategoryLetter(props.category)}</span>
-        <span className="Value">{props.value}</span>
-        <span className={`Spade ${props.category}`} style={{background: `var(--${props.category}-color)`}}>{isSpade(props.spade)}</span>
+        <span className={`Category ${category}`} style={{background: `var(--${category}-color)`}}>{getCategoryLetter(category)}</span>
+        <span className="Value">{value[idx % value.length]}</span>
+        <span className={`Spade ${props.category}`} style={{background: `var(--${props.category}-color)`}}>{isSpade(isSpadee)}</span>
     </div>
 }
 

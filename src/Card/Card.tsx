@@ -1,26 +1,24 @@
-import {Entry} from "../Entry/Entry";
+import { useState } from "react";
+import { setType } from "../Cards/Sets";
+import { Entry} from "../Entry/Entry";
 import './card.scss'
 
-type CardValue = {
-    value: String;
-    spade?: boolean;
-}
-
 export type CardProps = {
-    person: CardValue
-    world: CardValue
-    object: CardValue
-    adjective: CardValue
-    nature: CardValue
-    random: CardValue
+    deck: setType[]
 };
 
-export const Card = (props: CardProps) =>
-    <div className="Card">
+export const Card = (props: CardProps) => {
+    const [idx, setIdx] = useState(0)
+
+    const handleClick = () => setIdx(idx + 1)
+
+    const spadeIdx = Math.floor(Math.random() * props.deck.length)
+    return <div className="Card" onClick={handleClick}>
         {
-            Object.entries(props)
-                .map((entry, i) =>
-                    <Entry key={i} category={entry[0]} value={entry[1].value} spade={entry[1].spade}/>
-                )
+            props.deck.map((entry, i) => {
+                return <Entry key={i} category={entry.category} value={entry.targets} idx={idx} isSpadee={spadeIdx === i}/>
+            }
+            )
         }
     </div>;
+}

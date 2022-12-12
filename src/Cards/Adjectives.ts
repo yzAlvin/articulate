@@ -1,3 +1,5 @@
+import { setType } from "./Sets";
+
 export const adjectives = [
     "Struggling",
     "Digesting",
@@ -20,3 +22,8 @@ export const adjectives = [
     "Congesting",
     "Consulting",
 ];
+
+export const newAdjectives: setType = {
+    category: "adjective",
+    targets: adjectives
+}

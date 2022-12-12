@@ -6,3 +6,8 @@ export const games: string[] = [
     "Hearthstone",
     "Adventure Quest"
 ];
+
+export const newGames = {
+    category: "game",
+    targets: games
+}

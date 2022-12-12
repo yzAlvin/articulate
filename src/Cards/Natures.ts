@@ -1,3 +1,5 @@
+import { setType } from "./Sets";
+
 export const natures = [
     "Watermelon",
     "Grape",
@@ -21,3 +23,8 @@ export const natures = [
     "Aubergine" ,
     "Mosquito"
 ];
+
+export const newNatures: setType = {
+    category: "nature",
+    targets: natures
+}

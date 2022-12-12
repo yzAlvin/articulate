@@ -13,3 +13,8 @@ export const fastFoods: string[] = [
     "McDonald's",
     "Jollibee"
 ];
+
+export const newFastFoods = {
+    category: "fastFood",
+    targets: fastFoods
+}

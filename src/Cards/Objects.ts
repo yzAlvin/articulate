@@ -21,3 +21,8 @@ export const objects = [
   "Bunsen Burner",
   "Christmas Cracker",
 ];
+
+export const newObject = {
+  category: "object",
+  targets: objects
+}

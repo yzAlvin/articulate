@@ -4,3 +4,8 @@ export const twitchStreamers: string[] = [
     "Ludwig",
     "Shroud"
 ];
+
+export const newTwitchStreamers = {
+    category: "twitch",
+    targets: twitchStreamers
+}

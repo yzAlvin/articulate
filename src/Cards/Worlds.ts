@@ -21,3 +21,8 @@ export const worlds = [
     "The Vatican",
     "Harvard"
 ];
+
+export const newWorld = {
+    category: "world",
+    targets: worlds
+}

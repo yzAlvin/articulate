@@ -21,3 +21,8 @@ export const randoms = [
     "Beeline",
     "Alien",
 ];
+
+export const newRandom = {
+    category: "random",
+    targets: randoms
+}
