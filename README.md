@@ -54,3 +54,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 [license-shield]: https://img.shields.io/github/license/yzAlvin/articulate.svg?style=for-the-badge
 [license-url]: https://github.com/yzAlvin/articulate/blob/master/LICENSE.txt
+
+## Dead
+
+doesn't work
